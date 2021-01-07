@@ -1,0 +1,21 @@
+\section{Force responses}%
+\label{closedloopy}
+
+Using sympy to determine the closed form expression of the impulse, step and frequency response of $G_{\theta}$ and $G_{x}$
+\\
+For $G_{\theta}$ as follows: Impulse response
+\[- \frac{c \sinh{\left(\sqrt{d} t \right)} \theta\left(t\right)}{\sqrt{d}} \]
+Step response
+\[- \frac{2 c \sinh^{2}{\left(\frac{\sqrt{d} t}{2} \right)} \theta\left(t\right)}{d}\]
+frequency response
+\begin{multline}
+    \frac{c w \left(2 d^{\frac{3}{2}} e^{\sqrt{d} t} \sin{\left(t w \right)} + 2 \sqrt{d} w^{2} e^{\sqrt{d} t} \sin{\left(t w \right)} - d w e^{2 \sqrt{d} t} + d w - w^{3} e^{2 \sqrt{d} t} + w^{3}\right) e^{- \sqrt{d} t} \theta\left(t\right)}{2 \sqrt{d} \left(d^{2} + 2 d w^{2} + w^{4}\right)}
+\end{multline}
+\\
+
+For $G_{x}$ as follows: Impulse response
+\[t \left(a - b\right) \theta\left(t\right)\]
+\[\frac{t^{2} \left(a - b\right) \theta\left(t\right)}{2}\]
+\[\frac{\left(a - b\right) \left(t w - \sin{\left(t w \right)}\right) \theta\left(t\right)}{w}\]
+
+Further investigation may be required for $G_{x}$
