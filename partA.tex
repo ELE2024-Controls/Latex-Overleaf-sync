@@ -12,8 +12,13 @@
 
 Forces on x-axis : \\
 \[
-Fmag + mg + \sin (\theta ) - T - Fspring - Fdamper = m \ddot x \label{eq:1} \tag{\ding{1}}
+Fmag + mg \sin (\theta ) - T - Fs - Fd = m \ddot x\label{eq:1} \tag{\ding{1}}
 \]
+
+$Fs = k(x-d)$\\
+$Fd = b\dot x$
+
+
 Forces on y-axis: \\
 $N - mg\cos(\theta) = 0$  - (2)
 
@@ -30,22 +35,26 @@ By 'Pizza slice theorem', $\ddot x = \ddot \theta r$
 Therefore, 
 $T = 1/2 m \ddot x$ \\
 
+Finding magnet force, Fmag
 
-Using python's symbolic differentiation, SymPy, to confirm the partial derivatives of {$\phi$} , {$\psi$} . 
-\\
-Equilibrium point is represented as $x_{1}^e, x_{2}^e, x_{3}^e, x_{4}^e, F^e = (0, 0, 0, 0, 0)$ \\
+$Fmag = C \frac{I^2}{R^2}$    -  (2)
 
-$
-\begin{equations} \label{phi_differentials}
-\frac{\delta \Phi \left ( F, x_{3}, x_{4} \right )}{\delta F}_{F^e, x_{3}^e, x_{4}^e} = \frac{4}{4 M + m} \\
-\frac{\delta \Phi \left ( F, x_{3}, x_{4} \right )}{\delta x_{3}}_{F^e, x_{3}^e, x_{4}^e} = - \frac{3 g m}{4 M + m} \\
-\frac{\delta \Phi \left ( F, x_{3}, x_{4} \right )}{\delta x_{4}}_{F^e, x_{3}^e, x_{4}^e} =   0 
-\end{equations}
-\\
-\\
-\begin{equations} \label{psi_differentials}
-\frac{\delta \psi \left ( F, x_{3}, x_{4} \right )}{\delta F}_{F^e, x_{3}^e, x_{4}^e} = - \frac{3}{\ell \left(4 M + m\right)} \\
-\frac{\delta \psi \left ( F, x_{3}, x_{4} \right )}{\delta x_{3}}_{F^e, x_{3}^e, x_{4}^e} = \frac{3 g \left(M + m\right)}{\ell \left(4 M + m\right)}\\
-\frac{\delta \psi \left ( F, x_{3}, x_{4} \right )}{\delta x_{4}}_{F^e, x_{3}^e, x_{4}^e} =   0 
-\end{equations}
-$
+Applying Kirchoffs Voltage Law on loop,\\
+$V = IR + \dot I C$
+
+$$\int V dy = IR \int 1\cdot dy + C \int \frac{di}{dy} dy$
+
+$Vy = IRy + LI$
+
+$Vy = I(Ry + L)$
+
+$I = \frac{Vy}{Ry+L}$ -   (3)
+
+Substituting (3) into (2)
+
+$Fmag = \frac{CV^2y^2}{(Ry + L)^2 y^2} = \frac{C}{(Ry+L)^2}V^2$ - (4)
+
+Substituting (4) into (1)
+
+$$\frac{CV^2}{(Ry+L)^2} + mg\sin(\theta) -k(x-d) - b\dot x = \frac{1}{2}m\ddot x $
+
