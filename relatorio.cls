@@ -70,6 +70,7 @@
 \RequirePackage{caption}[2004/07/16]
 
 % Math related
+
 \RequirePackage{amssymb}
 \RequirePackage{amsmath} % Mathematic symbols and stuff
 \RequirePackage{amsfonts} % Mathematical fonts

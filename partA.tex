@@ -1,5 +1,36 @@
-\section{Symbolic Differentiation}%
-\label{sym_def}
+\section{Part A}%
+\label{a}
+
+
+\begin{figure}[H]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[width=0.8\linewidth]{imgs/FBD.png}
+	\caption{Free-body diagram of forces acting upon the ball}%
+	\label{fig:14}
+\end{figure}
+
+Forces on x-axis : \\
+\[
+Fmag + mg + \sin (\theta ) - T - Fspring - Fdamper = m \ddot x \label{eq:1} \tag{\ding{1}}
+\]
+Forces on y-axis: \\
+$N - mg\cos(\theta) = 0$  - (2)
+
+Moment of inertia, i = $2/5mr^2$
+
+Torque $M = -Tr$          (-Ve as rotating clockwise)
+
+$I\ddot \theta = -Tr \rightarrow  1/2 mr^\cancel{2} \ddot\theta = -T\cancel{r}$
+
+$T = -1/2 mr\ddot\theta$ 
+
+By 'Pizza slice theorem', $\ddot x = \ddot \theta r$
+
+Therefore, 
+$T = 1/2 m \ddot x$ \\
+
+
 Using python's symbolic differentiation, SymPy, to confirm the partial derivatives of {$\phi$} , {$\psi$} . 
 \\
 Equilibrium point is represented as $x_{1}^e, x_{2}^e, x_{3}^e, x_{4}^e, F^e = (0, 0, 0, 0, 0)$ \\
