@@ -129,4 +129,22 @@ $\dot x_{2} - \dot x^{eq}^{2}$
 \frac{2c}{m(Ry + L)^2} \end{bmatrix} \bar V- \begin{bmatrix}\frac{2k}{m}\end{bmatrix}\bar x_{1} - \begin{bmatrix}\frac{2b}{m}\end{bmatrix} \bar x_{2}
 $ \\
 
- $ \dot \bar x_{2} = A \bar V - B\bar x_{1} - C\bar x_{2}
+ $ \dot \bar x_{2} = A \bar V - B\bar x_{1} - C\bar x_{2}$
+ 
+\textbf{A5} \\
+Finding transfer function,\\
+$x_{2} = \dot x_{1} \quad x_{2}^{eq} = 0$ \\
+$x_{2} - x_{2}^{eq} = \dot x - 0$ \\
+$\bar x_{2} = \dot x_{1}$ \\
+$\bar x_{2} = \dot \bar x_{1}$ \\
+$\dot \bar x_{2} = A\bar V - B\bar x_{1} - C\dot \bar x_{1}$ \\ 
+$S \cdot \bar x_{1} = \bar x_{2} = \dot \bar x_{1}$ \\ 
+$S \cdot \bar x_{2} = \dot \bar x_{2}$ \\
+$\therefore S\bar x_{2} =  A\bar V - B\bar x_{1} - C(S \cdot \bar x_{1})$ \\
+$S \bar x_{2} = S \cdot S \cdot \bar x_{1}$ \\
+$S^2 \bar x_{1} = A\bar V - B$ \\
+$S^2\bar x_{2} =  A\bar V - B\bar x_{1} - C(S \cdot \bar x_{1})$ \\
+$S^2\bar x_{2} + B\bar x_{1} + C(S \cdot \bar x_{1}) =  A\bar V$ \\
+$(S^2 + B + CS)\bar x_{1} = A\bar V$ \\
+Re-arranging to get transfer function, \\
+$\frac{\bar x_{1}}{\bar V} = \frac{A}{S^2 + CS + B}$ \\
