@@ -83,15 +83,50 @@ $\dot x = f(x, V)$, a pair $(x^eq , V^eq)$ is an equilibrium point if $f(x^eq, V
 
 at equilibrium, $d = 0$
 
-    \underline{x^{eq}}=
+    $\underline{x^{eq}}=$
 \left\{\begin{matrix}
 x_{2}^{eq} = 0
 \\ 
 \frac{2CV^2}{(Ry+L)^2m} + 2g\sin(\theta) - \frac{2k}{m}(x_{1}^{eq}-0) - \frac{2b}{m} x_{2}^{eq} = 0
 \end{matrix}\right.
 \\
+\\
+\pagebreak \\
+\textbf{A4} \\
+\frac{2CV^2}{(Ry+L)^2m} + 2g\sin(\theta) - \frac{2k}{m}(x_{1}^{eq}-d) - \frac{2b}{m} x_{2}^{eq} = 0
 
-\textbf{A4}
+$g(V) = V^2$
 
+$g'(V) = 2V$
 
-\pagebreak
+$g(V^eq) = (V^eq)^2$
+
+$g'(V^eq) = 2V^eq$
+
+By Taylor's Theorem, 
+
+$g(V)\approx g(V^{eq}) + g'(V^{eq})(V - V^{eq})$ \\
+$V^2 \approx (V^{eq})^2 + 2V^{eq} (\bar{V})$ \\
+
+Deviation variable, $\bar{V}$ \\
+
+$V^2 \approx (V^{eq}^2 + 2(V^{eq})(\bar{V})$ \\
+$V^2 - (V^{eq})^2 \approx 2(V^{eq})(\bar{V})$
+
+$\dot x_{2} - \dot x_{2}^{eq} = \dot x_{2} - 0 = \dot x_{2} = \dot\bar x_{2}$
+
+$\dot x_{2} - \dot x^{eq}^{2}$
+
+ $\dot \bar x_{2} = \frac{2c}{m(Ry + L)^2}2V^{eq}\cdot V - \frac{2k}{m}(x_{1}-x_{1}^{eq}) - \frac{2b}{m} (x_{2}-x_{2}^{eq})$
+ 
+ Using deviation variables, \\
+ $\bar x_{1} = (x_{1}-x_{1}^{eq})$ \\
+ $\bar x_{2} = (x_{2}-x_{2}^{eq})$  \\
+ $\bar V =  2V^{eq}\cdot V$ \\
+ 
+ $ \dot \bar x_{2} =
+\begin{bmatrix}
+\frac{2c}{m(Ry + L)^2} \end{bmatrix} \bar V- \begin{bmatrix}\frac{2k}{m}\end{bmatrix}\bar x_{1} - \begin{bmatrix}\frac{2b}{m}\end{bmatrix} \bar x_{2}
+$ \\
+
+ $ \dot \bar x_{2} = A \bar V - B\bar x_{1} - C\bar x_{2}
