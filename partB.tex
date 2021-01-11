@@ -6,13 +6,24 @@ Henceforth, a set of values are assumed to carry out simulations : $m = 0.425kg$
 
 \textbf{B1} \\
 \textbf{B2} \\ 
+Applying Sympy's diff functions, a set of linearised functions were derived which confirms theoretical calculation: \\
+$A = \frac{4 V c}{\left(L + R y\right)^{2}}$ \\
+$B = -\frac{2 k}{m}$ \\
+$C =- \frac{2 b}{m}$ \\
+Used in : \\
+$\dot \bar x_{2} = A \bar V - B\bar x_{1} - C\bar x_{2} \\
+
+
 \textbf{B3} \\ 
+Determining impulse and step responses of the system of the transfer function \\
+$$\frac{\bar x_{1}}{\bar V} = \frac{A}{S^2 + CS + B}$ \\$
+
 
 \begin{figure}[H]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=1\linewidth]{imgs/Impulse step response.png}
-	\caption{Position over time}%
+	\caption{Amplitude responses over time of responses}%
 	\label{fig:14}
 \end{figure}
 
@@ -22,7 +33,7 @@ Henceforth, a set of values are assumed to carry out simulations : $m = 0.425kg$
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=1\linewidth]{imgs/Bode plot.png}
-	\caption{Position over time}%
+	\caption{Phase and Magnitude response over frequency sweep.}%
 	\label{fig:14}
 \end{figure}
 

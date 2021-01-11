@@ -85,6 +85,8 @@
 % Makes the column type L, that is centered and allows line wrap.
 \newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
 
+
+
 % Utilities
 \RequirePackage{pdfpages} % Advanced PDF importing
 \RequirePackage{pdflscape} % One page panorama
