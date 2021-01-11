@@ -1,52 +1,29 @@
-\section{Part B}%
+\section{Part B - Analysis and Controller Design}%
 \label{b}
 
-State space representation of system \\
-$
-\begin{equations} \label{ssr}
- \dot x_{1} = x_{2} \\
- \dot x_{2} = aF - bx_{3} \\
- \dot x_{3} = x_{4} \\
- \dot x_{4} = - cF + dx_{3}
-\end{equations}
-$ \\ \\
-Applying Laplace transform on the set of equations.
-$
-\begin{equations} \label{ll}
-sX_{1}(s) = X_{2}(s) \\
-sX_{2}(s) =aF(s) - bX_{3}(s) \\
-sX_{3}(s) = X_{4}(s) \\
-sX_{4}(s) = cF(s) + dX_{3}(s) 
-\end{equations}
-$ \\ \\
-Deriving transfer function for $G_{\theta}(s)$ using $F(s)$ as input variable and angle, $X_{3}(s)$ as output variable. \\ 
-\[ G_{\theta}(s) = \frac{\theta (s)}{F(s)} \]
-$
-\begin{equations} \label{dr}
- sX_{3}(s) = X_{4}(s) \\
- sX_{4}(s) = cF(s) + dX_{3}(s) \\
- 
- Substituting into
- 
-s^2 X_{3} = -cF + dX_{3} \\
-s^2 X_{3} - dX_{3} = -cF  \\
-(s^2-d) X_{3} = -cF  
-\end{equations}
-$
 
-\[ G_{\theta}(s) = - \frac{c}{s^2 - d} \]
+Henceforth, a set of values are assumed to carry out simulations : $m = 0.425kg$, $g=9.81m/s^2$, $d = 0.42m$, $\delta = 0.65m$, $r = 0.125m$, $R = 53\omega$, $L_{0} = 120mH$, $L_{1} = 25mH$, $\alpha = 1.2m^-1$, $c = 6815_{A^2 \cdot s^2}^{g\cdot m^3}$, $ k = 1880N/m$, $b = 10.4Ns/m$, $\phi = 42^{\circ} \\ 
 
-\pagebreak
-Deriving transfer function for $G_{x}(s)$ using $F(s)$ as input variable and horisontal position, $X_{1}(s)$ as output variable. 
+\textbf{B1} \\
+\textbf{B2} \\ 
+\textbf{B3} \\ 
 
-\[ G_{x}(s) = \frac{X_{1}(s)}{F(s)} \]
-$
-\begin{equations} \label{dr}
- sX_{1}(s) = X_{2}(s) \\
- sX_{2}(s) =aF(s) - bX_{3}(s) \\
-Substituting
-s^2 X_{1} = aF - bX_{3}
-\begin{equations}
- 
-\end{equations}
-\[ G_{\theta}(s) =  \frac{s^2}{a-b} \]
+\begin{figure}[H]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[width=1\linewidth]{imgs/Impulse step response.png}
+	\caption{Position over time}%
+	\label{fig:14}
+\end{figure}
+
+\textbf{B4} \\ 
+
+\begin{figure}[H]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[width=1\linewidth]{imgs/Bode plot.png}
+	\caption{Position over time}%
+	\label{fig:14}
+\end{figure}
+
+\textbf{B5} \\ 
